@@ -1,0 +1,33 @@
+   .card {
+    position: relative;
+    overflow: hidden;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+  }
+  
+  .card:hover {
+    box-shadow: 0 5px 20px 2px rgba(173, 216, 230, 0.7), 
+              0 10px 30px 2px rgba(173, 216, 230, 0.5);
+  }
+  
+  .foto {
+    width: 100%;
+    border-radius: 15px;
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    transition: transform 0.5s, filter 0.5s; 
+  }
+  
+  .card:hover .foto{
+    transform: scale(1.15);
+    filter: brightness(1.1); 
+  }
+  
+  .cardContent {
+    background-color: #ffffff;
+    border-radius: 0 0 15px 15px;
+    padding: 16px;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  
