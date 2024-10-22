@@ -140,9 +140,9 @@ const ProductForm: React.FC<ProductFormProps> = ({
         category.parent_id == 52 ||
         category.parent_id == 802
       ) {
-        dispatch(fetchAllSizeValuesRequest(2));
-      } else if (category.name === "Pants" || category.parent_id == 803) {
         dispatch(fetchAllSizeValuesRequest(1));
+      } else if (category.name === "Pants" || category.parent_id == 803) {
+        dispatch(fetchAllSizeValuesRequest(2));
       } else {
         setShowSizeOptions(false);
       }

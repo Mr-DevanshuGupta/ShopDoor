@@ -69,7 +69,7 @@ const cartSlice = createSlice({
             state.status = 'succeeded';
             const updatedCartItem = action.payload;
             const updatedProductId = updatedCartItem.product.id;
-            const updatedVariantId = updatedCartItem.productVariant?.product.id;
+            const updatedVariantId = updatedCartItem.productVariant?.id;
 
             state.cart = state.cart.map(item => {
                 const itemProductId = item.product.id;
